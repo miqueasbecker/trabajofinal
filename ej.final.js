@@ -54,4 +54,3 @@ function validarFormulario(evento) {
   console.log("Teléfono:", telefonoinput.value);
 } 
 
-
