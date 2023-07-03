@@ -47,79 +47,48 @@
           datos personales
       </h2>
       <div class="box1">
-        nombre: <br>
         <form class="row g-3 needs-validation" validate>
           <div class="col-md-4">
-            <label for="validationCustom01" class="form-label"></label>
-            <input type="text" class="form-control" id="nombre" required>
+            <label for="nombre">Nombre:</label>
+            <small id="error-nombre" class="mensaje-error"></small>
+            <input type="text" id="nombre" required>
             <div class="valid-feedback">
             </div>
             <div class="box2">
-              apellido: <br>
               <div class="col-md-4">
-                <label for="validationCustom02" class="form-label"></label>
-                <input type="text" class="form-control" id="apellido" required>
+                <label for="apellido">Apellido:</label>
+                <small id="error-apellido" class="mensaje-error"></small>
+                <input type="text" id="apellido" required>
                 <div class="valid-feedback">
                 </div>
               </div>
               <div class="box3">
-                edad:<br>
-                <label for="validationCustom02" class="form-label"></label>
-                <input type="number" class="form-control" id="edad" required>
+                <label for="edad">edad:</label>
+                <input type="number" id="edad" required>
                 <div class="valid-feedback">
                 </div>
                 <div class="box4">
-                  domicilio:<br>
-                  <div class="col-md-4">
-                    <label for="validationCustom01" class="form-label"></label>
-                    <input type="text" class="form-control" id="domicilio" required>
+                  <label for="Domicilio">Domicilio:</label>
+                  <input type="text" id="Domicilio" required>
+                  <small id="error-domicilio" class="mensaje-error"></small>
                     <div class="valid-feedback">
-                    </div>
-                    <div class="box5">
-                      fecha de nacimiento:<br>
-                      <label for="validationCustom02" class="form-label"></label>
-                      <input type="date" class="form-control" id="fecha de nacimiento" required>
-                      <div class="valid-feedback">
-                      </div>
-                    </div>
-                    <div class="box6">
-                      escuela primaria completa:<br>
-                      <div class="col-md-3">
-                        <label for="validationDefault04" class="form-label"></label>
-                        <select class="form-select" id="validationDefault04" required>
-                          <option selected disabled value=""></option>
-                          <option>no</option>
-                          <option>si</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="box7">
-                      escuela secundaria completa:<br>
-                      <div class="col-md-3">
-                        <label for="validationDefault04" class="form-label"></label>
-                        <select class="form-select" id="validationDefault04" required>
-                          <option selected disabled value=""></option>
-                          <option>no</option>
-                          <option>si</option>
-                        </select>
-                      </div>
                     </div>
                     <h2>
                       contacto:
                     </h2>
                     <div class="box8">
-                      gmail:<br>
                       <div class="col-md-4">
-                        <label for="validationCustom02" class="form-label"></label>
-                        <input type="email" class="form-control" id="gmail" required>
+                        <label for="gmail">Gmail:</label>
+                        <small id="error-email" class="mensaje-error"></small>
+                        <input type="email" id="gmail" required>
                         <div class="valid-feedback">
                         </div>
                       </div>
                     </div>
                     <div class="box9">
-                      telefono:<br>
-                      <label for="validationCustom02" class="form-label"></label>
-                      <input type="number" class="form-control" id="telefono" required>
+                      <label for="telefono">Telefono:</label>
+                      <small id="error-telefono" class="mensaje-error"></small>
+                      <input type="number" id="telefono" required>
                       <div class="valid-feedback">
                       </div>
                     </div>

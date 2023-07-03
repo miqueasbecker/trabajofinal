@@ -12,38 +12,55 @@ function validarFormulario(evento) {
   var nombre = document.getElementById('nombre').value;
   if(nombre.length > 3) {
     alert('No has escrito nada en el nombre');
-    return;
+    formularioCorrecto = false;
+  } else {
+    document.getElementById('error-nombre').innerHTML = "";
   }
 
   var apellido = document.getElementById('apellido').value;
   if (apellido.length > 3) {
     alert('No has escrito nada en el apellido');
-    return;
+    formularioCorrecto = false;
+  } else {
+    document.getElementById('error-apellido').innerHTML = "";
+  }
   }
 
   var edad = document.getElementById('edad').value;
   if (edad.length >0) {
     alert('No has escrito nada en la edad');
-    return;
+    formularioCorrecto = false;
+  } else {
+    document.getElementById('error-edad').innerHTML = "";
   }
+  
 
   var domicilio = document.getElementById('domicilio').value;
   if (domicilio.length > 4) {
     alert('No has escrito nada en el domicilio');
-    return;
+    formularioCorrecto = false;
+  } else {
+    document.getElementById('error-domicilio').innerHTML = "";
   }
+  
 
   var email = document.getElementById('email').value;
   if (email.length >4) {
     alert('No has escrito nada en el email');
-    return;
+    formularioCorrecto = false;
+  } else {
+    document.getElementById('error-email').innerHTML = "";
   }
+  
 
   var telefono = document.getElementById('telefono').value;
   if (telefono.length > 4) {
     alert('No has escrito nada en el teléfono');
-    return;
+    formularioCorrecto = false;
+  } else {
+    document.getElementById('error-telefono').innerHTML = "";
   }
+  
 
   console.log("Formulario válido. Datos enviados:");
   console.log("Nombre:", nombreinput.value);
@@ -52,5 +69,18 @@ function validarFormulario(evento) {
   console.log("Domicilio:", domicilioinput.value);
   console.log("Email:", emailinput.value);
   console.log("Teléfono:", telefonoinput.value);
-} 
+
+const inicializarJs = () => {
+  const boton = document.getElementById("enviar-btn");
+  boton.addEventListener('click', function (e) {
+    enviarFormulario();
+  });
+
+  document.getElementById('nombre').addEventListener('blur', function (e) {
+    validarNombre();
+  })
+
+}
+
+window.addEventListener('load', inicializarJs);
 
