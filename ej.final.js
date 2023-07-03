@@ -1,7 +1,3 @@
-
-  const enivarelformulario=()=>{
-    let formulariocorrecto = true;
-  }
 console.log("Registrado")
 document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("formulario").addEventListener('submit', validarFormulario); 
